@@ -13,14 +13,20 @@ schema:PersonShape
         sh:path schema:name ;
         sh:datatype xsd:string ;
         sh:name "name" ;
+        sh:minCount 1;
+        sh:maxCount 1;
     ] ;
     sh:property [
         sh:path foaf:surname ;
         sh:datatype xsd:string ;
         sh:name "surname" ;
+        sh:minCount 1;
+        sh:maxCount 1;
     ] ;
     sh:property [
         sh:path schema:birthDate ;
         sh:datatype xsd:date ;
         sh:name "birthDate" ;
+        sh:minCount 1;
+        sh:maxCount 1;
     ] .
