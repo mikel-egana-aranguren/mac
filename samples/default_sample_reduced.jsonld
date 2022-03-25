@@ -1,0 +1,16 @@
+{
+    "@context": {
+      "schema": "https://schema.org/",
+      "foaf": "http://xmlns.com/foaf/0.1/",
+      "schema:name": {
+        "@type": "xsd:string"
+      },
+      "foaf:surname": {
+        "@type": "xsd:string"
+      }
+    },
+    "@id": "https://mikel-egana-aranguren.github.io/mikel-egana-aranguren", 
+    "@type": "schema:Person",
+    "schema:name" : "Mikel", 
+    "foaf:surname" : "Egaña Aranguren"
+}
