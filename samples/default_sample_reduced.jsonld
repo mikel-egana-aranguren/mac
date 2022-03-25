@@ -5,6 +5,9 @@
       "schema:name": {
         "@type": "xsd:string"
       },
+      "schema:birthDate": {
+        "@type": "xsd:date"
+      },
       "foaf:surname": {
         "@type": "xsd:string"
       }
@@ -12,5 +15,6 @@
     "@id": "https://mikel-egana-aranguren.github.io/mikel-egana-aranguren", 
     "@type": "schema:Person",
     "schema:name" : "Mikel", 
-    "foaf:surname" : "Egaña Aranguren"
+    "foaf:surname" : "Egaña Aranguren",
+    "schema:birthDate": "1979-08-26"
 }
