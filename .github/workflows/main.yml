@@ -1,0 +1,20 @@
+name: build
+ 
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - semantic_mac
+ 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: pip install pyshacl
+
+      - name: Build and Validate
+        run: pyshacl -s samples/default_sample_reduced_person_shape.ttl -a -f human -df json-ld samples/default_sample_reduced.jsonld
