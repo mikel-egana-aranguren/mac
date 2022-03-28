@@ -17,4 +17,4 @@ jobs:
         run: pip install pyshacl
 
       - name: Build and Validate
-        run: pyshacl -s samples/default_sample_reduced_person_shape.ttl -a -f human -df json-ld samples/default_sample_reduced_non_conformant.jsonld
+        run: pyshacl -s samples/default_sample_reduced_person_shape.ttl -a -f human -df json-ld samples/default_sample_reduced.jsonld
